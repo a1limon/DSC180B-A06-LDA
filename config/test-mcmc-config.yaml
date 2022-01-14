@@ -1,0 +1,7 @@
+data_dir: test/testdata/
+data: test-heart.csv
+solver_params:
+  num_steps: 1000
+  beta_prior_init: 0.0
+  stddev_prior_init: 1
+  stddev_prop_init: 0.1
