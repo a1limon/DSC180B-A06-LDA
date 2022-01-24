@@ -3,13 +3,16 @@ argon2-cffi==21.1.0
 attrs==21.2.0
 backcall==0.2.0
 bleach==4.1.0
+certifi==2021.10.8
 cffi==1.15.0
+charset-normalizer==2.0.10
 cycler==0.11.0
 debugpy==1.5.1
 decorator==5.1.0
 defusedxml==0.7.1
 entrypoints==0.3
 fonttools==4.28.1
+idna==3.3
 ipykernel==6.5.1
 ipython==7.29.0
 ipython-genutils==0.2.0
@@ -54,6 +57,7 @@ PyYAML==6.0
 pyzmq==22.3.0
 qtconsole==5.2.0
 QtPy==1.11.2
+requests==2.27.1
 scipy==1.7.2
 Send2Trash==1.8.0
 setuptools-scm==6.3.2
@@ -64,6 +68,7 @@ tomli==1.2.2
 tornado==6.1
 tqdm==4.62.3
 traitlets==5.1.1
+urllib3==1.26.8
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.2
