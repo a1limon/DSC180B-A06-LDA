@@ -111,18 +111,13 @@ def get_random_wikipedia_articles(n):
             wtlist[j].join()
     return (WikiThread.articles, WikiThread.articlenames)
 
+
 if __name__ == '__main__':
-    # demo
-    
     t0 = time.time()
-    n = 1  # number of articles to download
-    (articles, articlenames) = get_random_wikipedia_articles(n)
 
-    with bz2.BZ2File('wikiarticles.pbz2', 'w') as f:
-        pickle.dump(articles, f)
+    (articles, articlenames) = get_random_wikipedia_articles(1)
+    for i in range(0, len(articles)):
+        print(articlenames[i])
 
-    with bz2.BZ2File('wikiarticlenames.pbz2', 'w') as f:
-        pickle.dump(articlenames, f)
-    
     t1 = time.time()
     print('took %f' % (t1 - t0))
