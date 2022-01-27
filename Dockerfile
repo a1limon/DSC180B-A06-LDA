@@ -19,15 +19,14 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 # 2) change to root to install packages
 USER root
 
-RUN echo 'jupyter notebook "$@"' > /run_jupyter.sh && chmod 755 /run_jupyter.sh
-
 RUN apt-get -y install htop
 
 # 3) install packages using notebook user
 USER jovyan
 
-COPY requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN conda install -y scikit-learn
+
+RUN pip install --no-cache-dir networkx scipy
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
