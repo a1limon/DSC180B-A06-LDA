@@ -12,4 +12,4 @@ To get it up and running:
 
 # Build and deploy
 
-At this point you've made changes to the repository on a separate branch that serves as your local working copy. After verifying it works locally you can create a pull request which will in turn run a workflow that builds an image from the `Dockerfile`. The workflow is set to run a pull_request which verifies not only that there are no merge conflicts, but that the image is successfully built with the changes made. Though, the expected changes should really only pertain to the `requirements.txt`.
+At this point you've made changes to the repository on a separate branch that serves as your local working copy. After verifying it works locally you can create a pull request which will in turn run a workflow that builds an image from the `Dockerfile`. The workflow is set to run on a pull request which verifies not only that there are no merge conflicts, but that the image is successfully built with the changes made. Though, the expected changes should really only pertain to the `requirements.txt`.
