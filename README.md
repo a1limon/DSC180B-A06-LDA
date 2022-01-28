@@ -9,10 +9,13 @@ To get it up and running:
 - `python3.7 -m venv env`
 - `source env/bin/activate`
 - `pip install -r requirements.txt`
+
 To interact with jupyter notebooks (make sure virtual env is activated and requirements.txt are installed):
 - `cd DSC180B-A06-LDA`
--  Download spacy data: `python3 -m spacy download en_core_web_md`
--  <Additional downloads>
+-  Download spacy data: 
+-  `python3 -m spacy download en_core_web_md`
+-  `python3 -m spacy download en_core_web_sm`
+-  Additional downloads...
 -  `jupyter notebook`
 
 # Build and deploy
